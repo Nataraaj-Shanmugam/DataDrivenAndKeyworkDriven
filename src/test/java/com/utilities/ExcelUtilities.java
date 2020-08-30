@@ -173,20 +173,6 @@ public class ExcelUtilities extends GenericKeywords{
 	/**
 	 * Function to get keywords for all scenarios to be executed
 	 */
-	/*public LinkedHashMap<String, LinkedHashMap<String, String>> masterKeywordDetails() {
-		LinkedHashMap<String, LinkedHashMap<String, String>> masterKeywordFlowDetails = new LinkedHashMap<String,LinkedHashMap<String,String>>();
-		ArrayList<String> scenariosList = scenariosToBeExecuted();
-		sheet = getSheet(propFile.getProperty("KeyWordSheet"));
-		for (String scenarioName : scenariosList) {
-			LinkedHashMap<String, String> dataSet = new LinkedHashMap<String, String>();
-			int scenarioRowNumber  = getRowNumber(scenarioName);
-			for (int i = 1; i < getLastCellNumber(0); i++) {
-				dataSet.put(getCellValue(0, i), getCellValue(scenarioRowNumber, i));
-			}
-			masterKeywordFlowDetails.put(scenarioName, dataSet);
-		}
-		return masterKeywordFlowDetails;
-	} */
 	public LinkedHashMap<String, LinkedList<String>> masterKeywordDetails() {
 		LinkedHashMap<String, LinkedList<String>> masterKeywordFlowDetails = new LinkedHashMap<String,LinkedList<String>>();
 		ArrayList<String> scenariosList = scenariosToBeExecuted();
