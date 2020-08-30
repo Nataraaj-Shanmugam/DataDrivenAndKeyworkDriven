@@ -12,7 +12,7 @@ public class ProjectCustomException extends Exception {
 			ThreadLocalFunctionalities.getdriver().quit();
 		if(ThreadLocalFunctionalities.getReporter() == null)
 			new ReporterUtilities().createReporterTest("Unable to find Extent Reporter Object");
-		ThreadLocalFunctionalities.getReporter().fail("Failed in Class file Name: "+failedClassName+"</br>Failed in Method Name: "+failedMethodName+"</br>Exception Details : "+exceptionDetails+"</br>Message : "+message);
+		ThreadLocalFunctionalities.getReporter().fail("Failed in Class file: "+failedClassName+"</br>Failed in Method: "+failedMethodName+"</br>Exception Details: "+exceptionDetails+"</br>Message: "+message);
 		ThreadLocalFunctionalities.getReporter().getExtent().flush();
 //		Thread.currentThread().stop();
 	}

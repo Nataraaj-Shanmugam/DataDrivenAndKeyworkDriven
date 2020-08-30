@@ -81,19 +81,6 @@ public interface GenericKeywordsInterface {
 
 	abstract boolean verifyPartialTextPresent(By locator,String validationtext);
 
-
-	//File Related functionalities
-
-	abstract void renameFile(String sourcefilePath, String destinationfilePath, String currentFileName, String currentFileExtension, String renameFileName, String renameFileExtension);
-
-	abstract boolean deleteFile(String filePath, String fileName);
-
-	abstract boolean deleteDirectory(String filePath);
-
-	abstract File getFile(String filePath, String fileName);
-
-	abstract File[] getFiles(String filePath);
-
 	//Reporter functionalities
 
 	abstract void reporterLog(String status, String message) throws ProjectCustomException;
