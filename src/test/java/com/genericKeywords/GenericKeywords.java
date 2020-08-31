@@ -350,22 +350,22 @@ public class GenericKeywords extends ThreadLocalFunctionalities implements Gener
 
 			switch (entityType.toLowerCase()) {
 			case "year":
-				calObj.set(Calendar.YEAR, calObj.get(Calendar.YEAR)+1);
+				calObj.set(Calendar.YEAR, calObj.get(Calendar.YEAR)+numbersToAdd);
 				break;
 			case "month":
-				calObj.set(Calendar.MONTH, calObj.get(Calendar.MONTH)+1);
+				calObj.set(Calendar.MONTH, calObj.get(Calendar.MONTH)+numbersToAdd);
 				break;
 			case "date":
-				calObj.set(Calendar.DATE, calObj.get(Calendar.DATE)+1);
+				calObj.set(Calendar.DATE, calObj.get(Calendar.DATE)+numbersToAdd);
 				break;
 			case "hour":
-				calObj.set(Calendar.HOUR_OF_DAY, calObj.get(Calendar.HOUR_OF_DAY)+1);
+				calObj.set(Calendar.HOUR_OF_DAY, calObj.get(Calendar.HOUR_OF_DAY)+numbersToAdd);
 				break;
 			case "minute":
-				calObj.set(Calendar.MINUTE, calObj.get(Calendar.MINUTE)+1);
+				calObj.set(Calendar.MINUTE, calObj.get(Calendar.MINUTE)+numbersToAdd);
 				break;
 			case "second":
-				calObj.set(Calendar.SECOND, calObj.get(Calendar.SECOND)+1);
+				calObj.set(Calendar.SECOND, calObj.get(Calendar.SECOND)+numbersToAdd);
 				break;
 			default: break;
 			}
